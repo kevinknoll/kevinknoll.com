@@ -1,6 +1,6 @@
 # kevinknoll.com
 
-Built with [Hugo](https://gohugo.io)
+Built with [Hugo](https://gohugo.io) and hosted on [Netlify](https://www.netlify.com)
 
 ## Prerequisites
 See [Hugo Quick Install](https://gohugo.io/getting-started/installing/#quick-install) documentation
@@ -16,4 +16,8 @@ See [Hugo Basic Usage](https://gohugo.io/getting-started/usage/#the-hugo-command
 >
 > This generates your website to the `public/` directory by default, although you can customize the output directory in your site configuration by changing the `publishDir` field.
 >
-> The site Hugo renders into `public/` is ready to be deployed to your web server:
+> The site Hugo renders into `public/` is ready to be deployed to your web server
+
+## Hosting
+See [Hosting on Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
+
