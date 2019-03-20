@@ -1,0 +1,11 @@
+{
+  "name": "kevinknoll-dot-com",
+  "version": "1.0.0",
+  "description": "The public website for Kevin Knoll",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinknoll/kevinknoll.com.git"
+  },
+  "author": "Kevin Knoll",
+  "license": "ISC"
+}
