@@ -1,7 +1,3 @@
 [build]
-publish = "public"
-command = "hugo"
-
-[context.production.environment]
-HUGO_VERSION = "0.37.1"
-HUGO_ENV = "production"
+  publish = "_site"
+  command = "eleventy --input=web"

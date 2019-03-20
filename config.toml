@@ -1,4 +1,0 @@
-baseURL = "https://kevinknoll.com/"
-languageCode = "en-us"
-title = "Kevin Knoll"
-disableKinds = ["RSS","taxonomy","taxonomyTerm"]

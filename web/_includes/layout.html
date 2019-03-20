@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0085dd">
-    <title>Kevin Knoll &middot; Interactive Developer</title>
+    <title>{{title}}</title>
 
     <style>
       .wrap {
@@ -70,7 +70,7 @@
   <body>
     <div class="wrap">
       <div class="page">
-        {{ block "main" . }}{{ end }}
+        {{content}}
       </div>
     </div>
   </body>

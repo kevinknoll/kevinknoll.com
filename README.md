@@ -1,23 +1,20 @@
 # kevinknoll.com
 
-Built with [Hugo](https://gohugo.io) and hosted on [Netlify](https://www.netlify.com)
+Built with [Eleventy](https://www.11ty.io/) and hosted on [Netlify](https://www.netlify.com)
 
 ## Prerequisites
-See [Hugo Quick Install](https://gohugo.io/getting-started/installing/#quick-install) documentation
+Install Eleventy locally via package.json
 
-> Download the appropriate version for your platform from Hugo Releases. Once downloaded, the binary can be run from anywhere. You don’t need to install it into a global location. This works well for shared hosts and other systems where you don’t have a privileged account.
->
-> Ideally, you should install it somewhere in your `PATH` for easy use. `/usr/local/bin` is the most probable location.
+```
+$ npm install
+```
 
 ## How to Build
-See [Hugo Basic Usage](https://gohugo.io/getting-started/usage/#the-hugo-command) documentation
+Run Eleventy build, using the `web` directory as the input. This will create the site in the `_site` directory.
 
-> The most common usage is probably to run `hugo` with your current directory being the input directory.
->
-> This generates your website to the `public/` directory by default, although you can customize the output directory in your site configuration by changing the `publishDir` field.
->
-> The site Hugo renders into `public/` is ready to be deployed to your web server
+```
+$ npx @11ty/eleventy --input=web
+```
 
 ## Hosting
-See [Hosting on Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
-
+The entire `_site` directory can be deployed as-is. See `netlify.toml`
