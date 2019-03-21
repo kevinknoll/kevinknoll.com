@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  // Copy the `web/sw.js` file
+  // copy the following files
   eleventyConfig.addPassthroughCopy("web/sw.js");
+  eleventyConfig.addPassthroughCopy("web/css");
 
   return {
     passthroughFileCopy: true
