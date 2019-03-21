@@ -1,0 +1,62 @@
+.hdr .wrap {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bold;
+  height: 55vh;
+  justify-content: space-between;
+  width: 100%;
+}
+.hdr .name {
+  display: block;
+  font-size: 45px;
+  transition: 0.2s ease-in all;
+}
+.hdr h1:hover .name {
+  font-size: inherit;
+}
+.hdr h1:hover .name {
+  animation: movedown 0.5s ease 1s 1 normal forwards;
+}
+.hdr h1:hover .fade {
+  animation: crush 0.5s ease 0s 1 normal forwards;
+}
+.hdr h1:hover .crush {
+  animation: crush 0.5s ease 0.5s 1 normal forwards;
+  display: inline-block;
+}
+.hdr h1:hover .crush.wait {
+  animation-delay: 1.5s;
+}
+.hdr h1:hover .right {
+  animation: moveright 0.3s ease 1s 1 normal forwards;
+  display: inline-block;
+  position: relative;
+}
+.hdr h1:hover .right:before {
+  animation: fadein 0.5s ease 1s 1 normal forwards;
+  content: '.';
+  left: -0.25em;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes crush {
+  from { max-width: 100em; }
+  to { max-width: 0; opacity: 0; }
+}
+@keyframes moveright {
+  to { transform: translateX(0.2em); }
+}
+@keyframes movedown {
+  to { transform: translateY(1.25em); }
+}
