@@ -1,9 +1,21 @@
 ---
 layout: home.html
 title: "Kevin Knoll develops the web"
+pagination:
+  data: collections.blog
+  size: 5
+  alias: posts
+  reverse: true
 ---
-<p>
-  <a href="https://github.com/kevinknoll/">Collaborate with me on Github</a>
-  or
-  <a href="https://www.jplcreative.com/careers/">work with me at JPL</a>
-</p>
+
+{% for post in posts %}
+  <article>
+    <time date="{{ post.date | dt: 'YYYY-MM-DDTHH:mm:ss+00:00' }}">{{ post.date | dt: 'DD MMMM YYYY' }}</time>
+    <h1>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h1>
+    <p>
+      {{ post.data.description }}
+    </p>
+  </article>
+{% endfor %}
