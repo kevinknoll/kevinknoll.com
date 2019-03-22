@@ -1,3 +1,23 @@
 [build]
   publish = "_site"
   command = "eleventy --input=web"
+[[redirects]]
+  from = "https://kevinknoll.netlify.com/*"
+  to = "https://kevk.dev/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://kevinknoll.com/*"
+  to = "https://kevk.dev/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://www.kevinknoll.com/*"
+  to = "https://kevk.dev/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://www.kevk.dev/*"
+  to = "https://kevk.dev/:splat"
+  status = 301
+  force = true

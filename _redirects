@@ -1,6 +1,0 @@
-# see https://www.netlify.com/docs/redirects/
-# redirect domain aliases to primary domain
-https://kevinknoll.com/* https://kevk.dev/:splat 301!
-https://www.kevinknoll.com/* https://kevk.dev/:splat 301!
-https://www.kevk.dev/* https://kevk.dev/:splat 301!
-https://kevinknoll.netlify.com/* https://kevk.dev/:splat 301!
