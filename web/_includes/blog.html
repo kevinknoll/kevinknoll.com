@@ -1,18 +1,18 @@
 ---
 layout: layout.html
 ---
-<div class="hdr">
+<header class="hdr">
   <div class="wrap">
     <a href="/">
       KevK.dev
     </a>
   </div>
-</div>
-<div class="bdy">
+</header>
+<main class="bdy" id="content">
   <div class="wrap">
     <article>
       <time date="{{ page.date | dt: 'YYYY-MM-DDTHH:mm:ss+00:00' }}">{{ page.date | dt: 'DD MMMM YYYY' }}</time>
       {{ content }}
     </article>
   </div>
-</div>
+</main>
