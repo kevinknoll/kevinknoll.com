@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   // copy the following files
   eleventyConfig.addPassthroughCopy("web/sw.js");
   eleventyConfig.addPassthroughCopy("web/css");
+  eleventyConfig.addPassthroughCopy("web/js");
 
   // datetime filter to format dates and times
   // takes a 'format' parameter that mimics moment.js

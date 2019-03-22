@@ -1,39 +1,32 @@
 .hdr .wrap {
-  display: flex;
-  flex-direction: column;
   font-size: 25px;
   font-weight: bold;
-  height: 55vh;
-  justify-content: space-between;
+  padding-top: 35vh;
   width: 100%;
 }
 .hdr .name {
   display: block;
-  font-size: 45px;
   transition: 0.2s ease-in all;
 }
-.hdr h1:hover .name {
-  font-size: inherit;
-}
-.hdr h1:hover .name {
+.hdr.animate .name {
   animation: movedown 0.5s ease 1s 1 normal forwards;
 }
-.hdr h1:hover .fade {
+.hdr.animate .fade {
   animation: crush 0.5s ease 0s 1 normal forwards;
 }
-.hdr h1:hover .crush {
+.hdr.animate .crush {
   animation: crush 0.5s ease 0.5s 1 normal forwards;
   display: inline-block;
 }
-.hdr h1:hover .crush.wait {
+.hdr.animate .crush.wait {
   animation-delay: 1.5s;
 }
-.hdr h1:hover .right {
+.hdr.animate .right {
   animation: moveright 0.3s ease 1s 1 normal forwards;
   display: inline-block;
   position: relative;
 }
-.hdr h1:hover .right:before {
+.hdr.animate .right:before {
   animation: fadein 0.5s ease 1s 1 normal forwards;
   content: '.';
   left: -0.25em;
@@ -58,5 +51,5 @@
   to { transform: translateX(0.2em); }
 }
 @keyframes movedown {
-  to { transform: translateY(1.25em); }
+  to { transform: translateY(1em); }
 }
