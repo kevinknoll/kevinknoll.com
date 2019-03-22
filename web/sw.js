@@ -1,13 +1,16 @@
 'use strict';
 
-var cachename = 'kevinknoll-v1';
+var cachename = 'kevk-v1';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(cachename).then(function (cache) {
       return cache.addAll([
         '/',
-        '/index.html'
+        '/index.html',
+        '/css/style.css',
+        '/css/home.css',
+        '/js/home.js'
       ]);
     })
   );
