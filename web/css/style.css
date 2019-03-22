@@ -64,6 +64,7 @@ a:hover {
   color: #272727;
 }
 .hide {
+  color: inherit !important;
   height: 1px;
   left: -10000px;
   overflow: hidden;
