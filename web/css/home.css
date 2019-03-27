@@ -4,52 +4,20 @@
   padding-top: 35vh;
   width: 100%;
 }
+
+.hdr .lax {
+  display: inline-block;
+}
 .hdr .name {
   display: block;
-  transition: 0.2s ease-in all;
-}
-.hdr.animate .name {
-  animation: movedown 0.5s ease 1s 1 normal forwards;
-}
-.hdr.animate .fade {
-  animation: crush 0.5s ease 0s 1 normal forwards;
-}
-.hdr.animate .crush {
-  animation: crush 0.5s ease 0.5s 1 normal forwards;
-  display: inline-block;
-}
-.hdr.animate .crush.wait {
-  animation-delay: 1.5s;
-}
-.hdr.animate .right {
-  animation: moveright 0.3s ease 1s 1 normal forwards;
-  display: inline-block;
   position: relative;
 }
-.hdr.animate .right:before {
-  animation: fadein 0.5s ease 1s 1 normal forwards;
-  content: '.';
-  left: -0.25em;
-  opacity: 0;
+.hdr .kev,
+.hdr .k {
   position: absolute;
+  left: 0;
   top: 0;
 }
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes fadeout {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-@keyframes crush {
-  from { max-width: 100em; }
-  to { max-width: 0; opacity: 0; }
-}
-@keyframes moveright {
-  to { transform: translateX(0.2em); }
-}
-@keyframes movedown {
-  to { transform: translateY(1em); }
+.hdr .k {
+  left: 2.8em;
 }
