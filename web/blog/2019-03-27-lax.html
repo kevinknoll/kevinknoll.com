@@ -1,0 +1,21 @@
+---
+title: Dealing with Jank
+description: Alex Fox claims &ldquo;smooth and beautiful animations when you scroll&rdquo; and he&rsquo;s right. Thanks to his library, lax.js, the janky css animation on the home page is silky smooth.
+layout: blog.html
+tags: blog
+---
+
+<h1>Dealing with Jank</h1>
+<p>Alex Fox claims &ldquo;smooth and beautiful animations when you scroll&rdquo; and he&rsquo;s right. Thanks to his library, <a href="https://github.com/alexfoxy/laxxx">lax.js</a>, the janky css animation on the home page is now silky smooth!</p>
+
+<h2>What is Jank?</h2>
+<p>&ldquo;Jank&rdquo; is an industry term that&rsquo;s been around for quite a while. I&rsquo;m not entirely sure of the exact origin, but Googler <a href="https://www.jankfree.org">Paul Lewis</a> describes it as <blockquote cite="https://www.jankfree.org">Jank is any stuttering, juddering or just plain halting that users see when a site or app isn&rsquo;t keeping up with the refresh rate. Jank is the result of frames taking too long for a browser to make, and it negatively impacts your users and how they experience your site or app.</blockquote>
+
+<h2>A Jank-free Journey</h2>
+<p>In my experience, the simpler solution, the better. One of my core beliefs is HTML before CSS and CSS before JavaScript. From the early days of my professional career, progressive enhancement was engraved in my brain. As a result, it was only natural for <a href="https://github.com/kevinknoll/kevinknoll.com/commit/9815f267b7b85cc0212328210d9b422342d62857">my first iteration</a> to leverage CSS animations.</p>
+<p>Unfortunately, I later spotted some janky scroll behavior, laggy animations, and other inconsistencies on some different devices. To combat this, <a href="https://github.com/kevinknoll/kevinknoll.com/commit/c6c78e4e7020714bb59655632485851944868382">I turned to lax.js</a>.</p>
+<p>The simplest implementation is to slap a class and data attribute on the dom elements being animated and let lax do its thing. This worked, but I opted to <a href="https://github.com/kevinknoll/kevinknoll.com/commit/c6c78e4e7020714bb59655632485851944868382">add the data-attributes via JavaScript</a> after initial page load to keep the HTML a little more readable.</p>
+
+<h2>Conclusion</h2>
+<p>I hope that someday, CSS animations become more powerful. But for now, I am very pleased with how it turned out and will definitely keep <a href="https://github.com/alexfoxy/laxxx">lax.js</a> in the toolbox for the future. Kudos to Alex for his hard work.</p>
+
